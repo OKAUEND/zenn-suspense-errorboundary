@@ -30,7 +30,6 @@ const messageQuery = selectorFamily({
   get: (status: string) => () => {
     //本来ならここでfetchなどを使いAPI通信を行う
     if (status === "Error") {
-      console.log("きた？");
       throw "Error";
     }
     return "成功！！！！";
